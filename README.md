@@ -26,15 +26,29 @@ The development process is based on Test Driven Development (TDD), starting with
 docker compose up --build
 ```
 
+As an alternative, if [Make](https://www.gnu.org/software/make/manual/make.html) is installed, you can run:
+
+```sh
+make build
+```
+
+See available [Makefile targets](Makefile) for more options.
+
 Now, on browser, you can access the REST API at [http://localhost:8000](http://localhost:8000).
 
-## Unit Testing
+## Testing
+
+### REST API execution
+
+Execute the API tests from `docs/api.http`. See the [HTTP Client documentation](https://www.jetbrains.com/help/phpstorm/http-client-in-product-code-editor.html) for more details on how to run these tests.
+
+### Unit Testing
 
 ```sh
 docker exec -it event-booking-api ./bin/phpunit
 ```
 
-## Acceptance Testing
+### Acceptance Testing
 
 ```sh
 docker exec -it event-booking-api ./bin/phpunit --group=acceptance
