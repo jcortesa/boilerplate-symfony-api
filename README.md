@@ -45,13 +45,13 @@ Execute the API tests from `docs/api.http`. See the [HTTP Client documentation](
 ### Unit Testing
 
 ```sh
-docker exec -it event-booking-api ./bin/phpunit
+docker exec -ti event-booking-backend php bin/phpunit
 ```
 
 ### Acceptance Testing
 
 ```sh
-docker exec -it event-booking-api ./bin/phpunit --group=acceptance
+docker exec -ti event-booking-backend php bin/phpunit --group=acceptance
 ```
 
 ## License
