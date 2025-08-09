@@ -1,4 +1,4 @@
-# PHP Event Booking API
+# Boilerplate Symfony API
 
 [![PHP](https://img.shields.io/badge/PHP-8.3+-blue.svg)](https://www.php.net/) [![Symfony](https://img.shields.io/badge/Symfony-7.3+-black.svg)](https://symfony.com/) [![Docker](https://img.shields.io/badge/Docker-Compose-blue.svg)](https://docs.docker.com/compose/) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -12,9 +12,9 @@
 
 ## Summary
 
-A REST API in PHP for managing events and bookings. Applied good programming practices, SOLID/DRY principles and following hexagonal architecture.
+⚠️ CHANGE ME!
 
-The development process is based on Test Driven Development (TDD), starting with the API tests, which define the expected behavior of the API. Then, the API is developed to meet the expectations, mocking everything until implementation is complete.
+Boilerplate created from previous technical assignment. Use it to develop assignments based on PHP & Symfony.
 
 ## Requirements
 
@@ -45,13 +45,13 @@ Execute the API tests from `docs/api.http`. See the [HTTP Client documentation](
 ### Unit Testing
 
 ```sh
-docker exec -ti event-booking-backend php bin/phpunit
+docker exec -ti backend-api php bin/phpunit
 ```
 
 ### Acceptance Testing
 
 ```sh
-docker exec -ti event-booking-backend php bin/phpunit --group=acceptance
+docker exec -ti backend-api php bin/phpunit --group=acceptance
 ```
 
 ## License

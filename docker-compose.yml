@@ -1,7 +1,7 @@
 services:
   php:
     image: php:8.3-fpm
-    container_name: event-booking-backend
+    container_name: api-backend
     working_dir: /var/www
     volumes:
       - .:/var/www
@@ -24,7 +24,7 @@ services:
 
   nginx:
     image: nginx:stable
-    container_name: event-booking-nginx
+    container_name: api-nginx
     ports:
       - "8000:80"
     volumes:
@@ -37,12 +37,12 @@ services:
 
   mysql:
     image: mysql:8.4
-    container_name: event-booking-db
+    container_name: api-db
     restart: always
     environment:
-      MYSQL_DATABASE: event-booking
-      MYSQL_USER: event-booking_user
-      MYSQL_PASSWORD: event-booking_pass
+      MYSQL_DATABASE: database
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
       MYSQL_ROOT_PASSWORD: root
     ports:
       - "3306:3306"

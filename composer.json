@@ -1,12 +1,12 @@
 {
-  "name": "jcortesa/php-event-booking-api",
-  "description": "PHP Event Booking API",
+  "name": "jcortesa/boilerplate-symfony-api",
+  "description": "Boilerplate Symfony API",
   "type": "project",
   "license": "MIT",
   "authors": [
     {
       "name": "Jorge Cortés",
-      "homepage": "https://github.com/jcortesa"
+      "homepage": "https://github.com/jcortesa/boilerplate-symfony-api"
     }
   ],
   "minimum-stability": "stable",

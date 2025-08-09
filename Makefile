@@ -1,4 +1,4 @@
-BACKEND_CONTAINER=event-booking-backend
+BACKEND_CONTAINER=api-backend
 
 help:
 	@echo "🛠️  Available targets:"
